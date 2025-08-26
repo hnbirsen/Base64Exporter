@@ -86,7 +86,7 @@ namespace Base64Exporter
             _btnConvert.Enabled = false;
             try
             {
-                await EncodeFileToBase64Async(_inputPath, sfd.FileName, progress).ConfigureAwait(false);
+                await EncodeFileToBase64Async(_inputPath, sfd.FileName, progress);
                 MessageBox.Show(this, "Conversion completed!", "Success",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
